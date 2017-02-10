@@ -95,3 +95,22 @@
 
 .nav-previous { float:left; }
 .nav-next { float:right; }
+
+@include breakpoint(medium up) {
+  #site-navigation {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    transition: $global-transition;
+    width: 100%;
+    z-index: 1;
+  }
+
+  #masthead {
+    margin-bottom: 65px;
+  }
+
+  .nav-up {
+    top: -78px !important;
+  }
+}

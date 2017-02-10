@@ -40,7 +40,7 @@
 				<ul class="menu">
 					<li class="home">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="/assets/images/greenlogo.png" alt="<?php bloginfo( 'name' ); ?>" />
+							<img src="/assets/img/greenlogo.png" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
 					</li>
 				</ul>
