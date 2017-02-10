@@ -38,7 +38,11 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+					<li class="home">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="/assets/images/greenlogo.png" alt="<?php bloginfo( 'name' ); ?>" />
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="top-bar-right">

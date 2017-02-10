@@ -73,6 +73,8 @@ $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
+$global-transition: all 0.2s ease-in-out;
+$slow-transition: all .5s ease-in-out;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
