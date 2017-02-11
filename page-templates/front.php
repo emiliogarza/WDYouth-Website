@@ -5,67 +5,70 @@ Template Name: Front
 get_header(); ?>
 
 <header id="front-hero" role="banner">
-	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+	<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out; pauseOnHover: false">
 		<ul class="orbit-container">
 			<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
 			<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 		<?php
-			if(get_field('rotating_image_1')) {
-				echo '<li class="is-active orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_1') . '" alt="Space">
-						</li>';
+			if(get_field('rotating_image_1') && get_field('rotating_image_1_link')) {
+				echo '				
+				<li class="is-active orbit-slide">
+					<a href="'. get_field('rotating_image_1_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_1') . '" alt="Space">
+					</a>
+				</li>';
 			}
-			if(get_field('rotating_image_2')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_2') . '" alt="Space">
-						</li>';
+			if(get_field('rotating_image_2') && get_field('rotating_image_2_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_2_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_2') . '" alt="Space">
+					</a>
+				</li>';
 			}	
-			if(get_field('rotating_image_3')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_3') . '" alt="Space">
-						</li>';
-			}	
-			if(get_field('rotating_image_4')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_4') . '" alt="Space">
-						</li>';
+			if(get_field('rotating_image_3') && get_field('rotating_image_3_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_3_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_3') . '" alt="Space">
+					</a>	
+				</li>';
 			}
-			if(get_field('rotating_image_5')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_5') . '" alt="Space">
-						</li>';
+			if(get_field('rotating_image_4') && get_field('rotating_image_4_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_4_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_4') . '" alt="Space">
+					</a>
+				</li>';
 			}
-			if(get_field('rotating_image_6')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_6') . '" alt="Space">
-						</li>';
+			if(get_field('rotating_image_5') && get_field('rotating_image_5_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_5_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_5') . '" alt="Space">
+					</a>
+				</li>';
+			}
+			if(get_field('rotating_image_6') && get_field('rotating_image_6_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_6_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_6') . '" alt="Space">
+					</a>	
+				</li>';
 			}	
-			if(get_field('rotating_image_7')) {
-				echo '<li class="orbit-slide">
-							<img class="orbit-image" src="' . get_field('rotating_image_7') . '" alt="Space">
-						</li>';
-			}																
+			if(get_field('rotating_image_7') && get_field('rotating_image_7_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_7_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_7') . '" alt="Space">
+					</a>
+				</li>';
+			}															
 		?>
 		</ul>
 	</div>
-
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-			<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-		</div>
-
-		<div id="watch">
-			<section id="stargazers">
-				<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-			</section>
-			<section id="twitter">
-				<a href="https://twitter.com/olefredrik">@olefredrik</a>
-			</section>
-		</div>
-	</div>
-
 </header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>

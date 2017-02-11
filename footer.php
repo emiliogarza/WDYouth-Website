@@ -11,11 +11,24 @@
 ?>
 
 		</section>
+
+
+
+
 		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
+			<footer>
+				<div class="row">
+					<div class="small-12 columns">
+						<img src="/assets/img/wdyouthlogo-vertical.png" alt="WDYouth Logo" />
+						<nav class="footer-social">
+							<a href="https://www.facebook.com/WD-Youth-195985515868/" target="_blank" class="fa fa-facebook"></a>
+							<a href="https://twitter.com/wdyouth/" target="_blank" class="fa fa-twitter"></a>
+							<a href="https://www.instagram.com/wdyouth/" target="_blank" class="fa fa-instagram"></a>
+							<a href="https://www.youtube.com/user/thewdyouth" target="_blank" class="fa fa-youtube-play"></a>
+						</nav>
+						<small>© 2017 WDYouth</small>
+					</div>
+				</div>
 			</footer>
 		</div>
 
