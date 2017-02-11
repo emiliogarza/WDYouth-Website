@@ -67,15 +67,17 @@ $body-font-color: $black;
 $heading-font-family: "Roboto Condensed",-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 $body-antialiased: true;
-$global-margin: 1rem;
-$large-global-margin: $global-margin * 3;
-$global-padding: 1rem;
+$global-margin: 2rem;
+$large-global-margin: $global-margin * 2;
+$global-padding: 2rem;
+$large-global-padding: $global-padding * 2;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: .3rem;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $global-transition: all 0.2s ease-in-out;
+$global-nav-size: 94px;
 $slow-transition: all .5s ease-in-out;
 $print-transparent-backgrounds: true;
 
@@ -623,3 +625,8 @@ $topbar-submenu-background: $outer-space;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
+
+// 38. Font Awesome Icons
+// ----------------------
+$icon-margin-bottom: 0.5rem;
+$icon-color: $secondary-color;

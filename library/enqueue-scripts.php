@@ -18,6 +18,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed');
 
+	// Enqueue the main Stylesheet.
+	wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
 

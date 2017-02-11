@@ -18,7 +18,7 @@
   @include breakpoint(medium) {
     background-size: cover;
     background-position: center;
-    margin: 0 0 rem-calc(72);
+    margin: 0 0 $global-margin;
   }
 
   #watch {
@@ -152,10 +152,12 @@
 .benefits {
   @include grid-row();
   text-align: center;
-
+  i {
+    color: $secondary-color;
+  }
   header {
     @include grid-column(12);
-
+    margin-bottom: $global-margin;    
     h2 {
       font-weight: 300;
     }
@@ -167,31 +169,21 @@
     }
   }
 
-  .semantic,
-  .responsive,
-  .customizable,
-  .professional {
+  .events,
+  .resources,
+  .about {
     @include breakpoint(small) {
       @include grid-column(12);
     }
 
     @include breakpoint(medium) {
-      @include grid-column(3);
-    }
-
-    img {
-      padding: 1.25rem;
-      margin: 1rem auto 0 auto;
+      @include grid-column(4);
     }
 
     h3 {
-      color: #0a0a0a;
+      color: $primary-color;
       font-weight: 300;
       font-size: 1.75rem;
-    }
-
-    p {
-      font-size: 0.9375rem;
     }
   }
 

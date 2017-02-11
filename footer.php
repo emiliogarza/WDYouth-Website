@@ -12,14 +12,11 @@
 
 		</section>
 
-
-
-
 		<div id="footer-container">
 			<footer>
 				<div class="row">
 					<div class="small-12 columns">
-						<img src="/assets/img/wdyouthlogo-vertical.png" alt="WDYouth Logo" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wdyouthlogo-vertical.png" alt="WDYouth Logo" />
 						<nav class="footer-social">
 							<a href="https://www.facebook.com/WD-Youth-195985515868/" target="_blank" class="fa fa-facebook"></a>
 							<a href="https://twitter.com/wdyouth/" target="_blank" class="fa fa-twitter"></a>

@@ -23,11 +23,11 @@ get_header(); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
-		</div>
-		<footer>
+		</div>	
+		<div class="the-tags">
 			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 			<p><?php the_tags(); ?></p>
-		</footer>
+		</div>
 		<?php the_post_navigation(); ?>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
 		<?php comments_template(); ?>

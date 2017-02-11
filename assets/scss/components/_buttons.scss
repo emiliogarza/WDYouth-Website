@@ -6,3 +6,7 @@
   border-radius: 3px;
   border: none;
 }
+button:hover,
+.button:hover {
+	box-shadow: 0 0 10px $dark-gray;
+}

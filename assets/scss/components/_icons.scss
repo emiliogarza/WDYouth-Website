@@ -1,0 +1,10 @@
+i.fa {
+	color: $icon-color;
+	margin-bottom: $icon-margin-bottom;
+	@include breakpoint(small) {
+		font-size:	3em;
+	}
+	@include breakpoint(medium) {
+		font-size:	5em;
+	}	
+}
