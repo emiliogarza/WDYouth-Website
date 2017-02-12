@@ -85,7 +85,7 @@ get_header(); ?>
 		?>		
 	</header>
 
-	<div class="events">		
+	<div class="events">	
 		<i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
 		<h3>Events</h3>
 		<p>View an upcoming event for the WDYouth</p>

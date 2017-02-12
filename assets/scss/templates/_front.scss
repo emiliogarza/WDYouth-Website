@@ -152,9 +152,6 @@
 .benefits {
   @include grid-row();
   text-align: center;
-  i {
-    color: $secondary-color;
-  }
   header {
     @include grid-column(12);
     margin-bottom: $global-margin;    

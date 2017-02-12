@@ -27,3 +27,11 @@
 
   }
 }
+
+.card {
+  box-shadow: $global-box-shadow;
+  .card-content {
+      padding: 1rem;
+      text-align: center;
+  }
+}    

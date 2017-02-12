@@ -3,9 +3,17 @@
 Template Name: Left Sidebar
 */
 get_header(); ?>
+<?php
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
-
+      if(get_field('event_background_image')) {
+        echo '<img src="'. get_field("event_background_image") .'" class="event-hero" />';
+      }
+?>
+<div class="featured-image-container">
+  <div class="image-frame">
+    <img src="http://localhost:8080/wp-content/uploads/2017/02/YC17-Artwork-wider.jpg" width="500px" />
+  </div>
+</div>
 <div id="page-sidebar-left" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
@@ -16,12 +24,13 @@ get_header(); ?>
       </header>
       <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
       <div class="entry-content">
+
           <?php the_content(); ?>
       </div>
-      <footer>
+      <div class="the-tags">
           <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
           <p><?php the_tags(); ?></p>
-      </footer>
+      </div>
       <?php do_action( 'foundationpress_page_before_comments' ); ?>
       <?php comments_template(); ?>
       <?php do_action( 'foundationpress_page_after_comments' ); ?>

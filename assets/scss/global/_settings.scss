@@ -50,8 +50,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2c4158,
-  secondary: #02d2a0,
+  primary: #02d2a0,
+  secondary: #2c4158,
   success: #43AC6A,
   warning: #f08a24,
   alert: #f04124,
@@ -78,6 +78,7 @@ $global-text-direction: ltr;
 $global-flexbox: false;
 $global-transition: all 0.2s ease-in-out;
 $global-nav-size: 94px;
+$global-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
 $slow-transition: all .5s ease-in-out;
 $print-transparent-backgrounds: true;
 
@@ -629,4 +630,4 @@ $topbar-unstack-breakpoint: medium;
 // 38. Font Awesome Icons
 // ----------------------
 $icon-margin-bottom: 0.5rem;
-$icon-color: $secondary-color;
+$icon-color: $primary-color;
