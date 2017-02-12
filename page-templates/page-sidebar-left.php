@@ -62,45 +62,33 @@ get_header(); ?>
               . get_field("panel1-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel2-content')) {
-              echo '<div class="tabs-panel is-active" id="panel2">'
+              echo '<div class="tabs-panel" id="panel2">'
               . get_field("panel2-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel3-content')) {
-              echo '<div class="tabs-panel is-active" id="panel3">'
+              echo '<div class="tabs-panel" id="panel3">'
               . get_field("panel3-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel4-content')) {
-              echo '<div class="tabs-panel is-active" id="panel4">'
+              echo '<div class="tabs-panel" id="panel4">'
               . get_field("panel4-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel5-content')) {
-              echo '<div class="tabs-panel is-active" id="panel5">'
+              echo '<div class="tabs-panel" id="panel5">'
               . get_field("panel5-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel6-content')) {
-              echo '<div class="tabs-panel is-active" id="panel6">'
+              echo '<div class="tabs-panel" id="panel6">'
               . get_field("panel6-content") .
               '</div>';
             }
-          ?>
-          <?php 
             if(get_field('panel7-content')) {
-              echo '<div class="tabs-panel is-active" id="panel7">'
+              echo '<div class="tabs-panel" id="panel7">'
               . get_field("panel7-content") .
               '</div>';
             }
