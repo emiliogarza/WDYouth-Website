@@ -1,0 +1,7 @@
+.tabs-title {
+	a:focus,
+	a[aria-selected='true'],
+	a {
+		color: $secondary-color ;
+	}
+}

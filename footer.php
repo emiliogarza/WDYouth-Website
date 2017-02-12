@@ -13,7 +13,7 @@
 		</section>
 
 		<div id="footer-container">
-			<footer>
+			<footer class="main-footer">
 				<div class="row">
 					<div class="small-12 columns">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wdyouthlogo-vertical.png" alt="WDYouth Logo" />

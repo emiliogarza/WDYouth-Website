@@ -25,6 +25,8 @@ get_header(); ?>
 					<li><?php printf( __( 'Return to the <a href="%s">home page</a>', 'foundationpress' ), home_url() ); ?></li>
 					<li><?php _e( 'Click the <a href="javascript:history.back()">Back</a> button', 'foundationpress' ); ?></li>
 				</ul>
+				<p>You can also search for what you might be looking for here:</p>
+				<?php get_search_form(); ?>
 			</div>
 		</article>
 

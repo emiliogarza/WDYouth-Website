@@ -166,9 +166,7 @@
     }
   }
 
-  .events,
-  .resources,
-  .about {
+  .bottom-tiles {    
     @include breakpoint(small) {
       @include grid-column(12);
     }
@@ -182,11 +180,5 @@
       font-weight: 300;
       font-size: 1.75rem;
     }
-  }
-
-  .why-foundation {
-    @include grid-row();
-    @include grid-column(12);
-    margin-top: 4rem;
   }
 }

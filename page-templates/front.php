@@ -85,25 +85,53 @@ get_header(); ?>
 		?>		
 	</header>
 
-	<div class="events">	
-		<i class="fa fa-calendar fa-5x" aria-hidden="true"></i>
-		<h3>Events</h3>
-		<p>View an upcoming event for the WDYouth</p>
-		<a href="/events/" class="button">View Events</a>
+	<div class="bottom-tiles">	
+	<?php
+		if(get_field('icon_1')) {
+			echo '<i class="fa ' . get_field("icon_1") . '" aria-hidden="true"></i>';
+		}
+		if(get_field('bottom_tiles_heading_1')) {
+			echo '<h3>' . get_field("bottom_tiles_heading_1") . '</h3>';
+		}
+		if(get_field('bottom_tiles_content_1')) {
+			echo '<p>' . get_field("bottom_tiles_content_1") . '</p>';
+		}
+		if(get_field('bottom_tiles_link_1') && get_field('bottom_tiles_link_label_1')) {
+			echo '<a href="' . get_field("bottom_tiles_link_1") . '" class="button">' . get_field("bottom_tiles_link_label_1") . '</a>';
+		}
+	?>
 	</div>
-
-	<div class="resources">
-		<i class="fa fa-download fa-5x" aria-hidden="true"></i>
-		<h3>Resources</h3>
-		<p>Downloadable resources for your media</p>
-		<a href="/resources/" class="button">Download Resources</a>
+	<div class="bottom-tiles">
+	<?php
+		if(get_field('icon_2')) {
+			echo '<i class="fa ' . get_field("icon_2") . '" aria-hidden="true"></i>';
+		}
+		if(get_field('bottom_tiles_heading_2')) {
+			echo '<h3>' . get_field("bottom_tiles_heading_2") . '</h3>';
+		}
+		if(get_field('bottom_tiles_content_2')) {
+			echo '<p>' . get_field("bottom_tiles_content_2") . '</p>';
+		}
+		if(get_field('bottom_tiles_link_2') && get_field('bottom_tiles_link_label_2')) {
+			echo '<a href="' . get_field("bottom_tiles_link_2") . '" class="button">' . get_field("bottom_tiles_link_label_2") . '</a>';
+		}
+	?>
 	</div>
-
-	<div class="about">
-		<i class="fa fa-users fa-5x" aria-hidden="true"></i>
-		<h3>About</h3>
-		<p>Learn about our History and the WDYouth Team</p>
-		<a href="/about/" class="button">Learn More</a>
+	<div class="bottom-tiles">
+	<?php
+		if(get_field('icon_3')) {
+			echo '<i class="fa ' . get_field("icon_3") . '" aria-hidden="true"></i>';
+		}
+		if(get_field('bottom_tiles_heading_3')) {
+			echo '<h3>' . get_field("bottom_tiles_heading_3") . '</h3>';
+		}
+		if(get_field('bottom_tiles_content_3')) {
+			echo '<p>' . get_field("bottom_tiles_content_3") . '</p>';
+		}
+		if(get_field('bottom_tiles_link_3') && get_field('bottom_tiles_link_label_3')) {
+			echo '<a href="' . get_field("bottom_tiles_link_3") . '" class="button">' . get_field("bottom_tiles_link_label_3") . '</a>';
+		}
+	?>	
 	</div>
 </section>
 
