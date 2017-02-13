@@ -2505,9 +2505,9 @@ if(function_exists("register_field_group"))
 		'location' => array (
 			array (
 				array (
-					'param' => 'page_parent',
+					'param' => 'page_template',
 					'operator' => '==',
-					'value' => '2',
+					'value' => 'page-templates/page-sidebar-left.php',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
