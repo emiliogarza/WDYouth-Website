@@ -20,6 +20,9 @@ require_once( 'library/cleanup.php' );
 /** Required for Foundation to work properly */
 require_once( 'library/foundation.php' );
 
+/** Adds Advanced Custom Fields Definitions */
+require_once( 'library/advanced-custom-fields.php' );
+
 /** Register all navigation menus */
 require_once( 'library/navigation.php' );
 
