@@ -8,11 +8,9 @@ get_header(); ?>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-      <header>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
-      </header>
       <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-      <div class="entry-content">
+      <div class="entry-content text-center">
+      <?php the_content(); ?>
       <iframe src="https://secure.gobluefire.com/go/form.php?rid=dd8e24dfa122&amp;" frameborder="0" border="0" style="border:none;width:100%;height:800px"></iframe>
       </div>
       <div class="the-tags">
