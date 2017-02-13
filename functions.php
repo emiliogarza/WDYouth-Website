@@ -1,13 +1,13 @@
 <?php
 /**
- * Author: Ole Fredrik Lie
- * URL: http://olefredrik.com
+ * Author: Emilio Garza
+ * URL: http://dev-e.com
  *
- * FoundationPress functions and definitions
+ * This theme was made by Emilio Garza with love with help
+ * from FoundationPress, which was my starting place.
  *
- * Set up the theme and provides some helper functions, which are used in the
- * theme as custom template tags. Others are attached to action and filter
- * hooks in WordPress to change core functionality.
+ * You can find info about the base theme FoundationPress at
+ * https://github.com/olefredrik/FoundationPress. Good stuff!
  *
  * @link https://codex.wordpress.org/Theme_Development
  * @package FoundationPress
