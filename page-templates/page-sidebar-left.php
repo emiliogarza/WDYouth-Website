@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Left Sidebar
+Template Name: Event Page
 */
 get_header(); ?>
 <?php
@@ -32,64 +32,64 @@ get_header(); ?>
           <?php the_content(); ?>
           <ul class="tabs" data-tabs id="event-details-tabs">
           <?php
-            if(get_field('panel1-title')) {
-              echo '<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">'. get_field("panel1-title") .'</a></li>';
+            if(get_field('panel1_title')) {
+              echo '<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">'. get_field("panel1_title") .'</a></li>';
             }
-            if(get_field('panel2-title')) {
-              echo '<li class="tabs-title"><a href="#panel2" aria-selected="true">'. get_field("panel2-title") .'</a></li>';
+            if(get_field('panel2_title')) {
+              echo '<li class="tabs-title"><a href="#panel2" aria-selected="true">'. get_field("panel2_title") .'</a></li>';
             }  
-            if(get_field('panel3-title')) {
-              echo '<li class="tabs-title"><a href="#panel3" aria-selected="true">'. get_field("panel3-title") .'</a></li>';
+            if(get_field('panel3_title')) {
+              echo '<li class="tabs-title"><a href="#panel3" aria-selected="true">'. get_field("panel3_title") .'</a></li>';
             }                       
-            if(get_field('panel4-title')) {
-              echo '<li class="tabs-title"><a href="#panel4" aria-selected="true">'. get_field("panel4-title") .'</a></li>';
+            if(get_field('panel4_title')) {
+              echo '<li class="tabs-title"><a href="#panel4" aria-selected="true">'. get_field("panel4_title") .'</a></li>';
             }
-            if(get_field('panel5-title')) {
-              echo '<li class="tabs-title"><a href="#panel5" aria-selected="true">'. get_field("panel5-title") .'</a></li>';
+            if(get_field('panel5_title')) {
+              echo '<li class="tabs-title"><a href="#panel5" aria-selected="true">'. get_field("panel5_title") .'</a></li>';
             }                            
-            if(get_field('panel6-title')) {
-              echo '<li class="tabs-title"><a href="#panel6" aria-selected="true">'. get_field("panel6-title") .'</a></li>';
+            if(get_field('panel6_title')) {
+              echo '<li class="tabs-title"><a href="#panel6" aria-selected="true">'. get_field("panel6_title") .'</a></li>';
             }            
-            if(get_field('panel7-title')) {
-              echo '<li class="tabs-title"><a href="#panel7" aria-selected="true">'. get_field("panel7-title") .'</a></li>';
+            if(get_field('panel7_title')) {
+              echo '<li class="tabs-title"><a href="#panel7" aria-selected="true">'. get_field("panel7_title") .'</a></li>';
             }            
           ?>
           </ul>
           <div class="tabs-content" data-tabs-content="event-details-tabs">
           <?php 
-            if(get_field('panel1-content')) {
+            if(get_field('panel1_content')) {
               echo '<div class="tabs-panel is-active" id="panel1">'
-              . get_field("panel1-content") .
+              . get_field("panel1_content") .
               '</div>';
             }
-            if(get_field('panel2-content')) {
+            if(get_field('panel2_content')) {
               echo '<div class="tabs-panel" id="panel2">'
-              . get_field("panel2-content") .
+              . get_field("panel2_content") .
               '</div>';
             }
-            if(get_field('panel3-content')) {
+            if(get_field('panel3_content')) {
               echo '<div class="tabs-panel" id="panel3">'
-              . get_field("panel3-content") .
+              . get_field("panel3_content") .
               '</div>';
             }
-            if(get_field('panel4-content')) {
+            if(get_field('panel4_content')) {
               echo '<div class="tabs-panel" id="panel4">'
-              . get_field("panel4-content") .
+              . get_field("panel4_content") .
               '</div>';
             }
-            if(get_field('panel5-content')) {
+            if(get_field('panel5_content')) {
               echo '<div class="tabs-panel" id="panel5">'
-              . get_field("panel5-content") .
+              . get_field("panel5_content") .
               '</div>';
             }
-            if(get_field('panel6-content')) {
+            if(get_field('panel6_content')) {
               echo '<div class="tabs-panel" id="panel6">'
-              . get_field("panel6-content") .
+              . get_field("panel6_content") .
               '</div>';
             }
-            if(get_field('panel7-content')) {
+            if(get_field('panel7_content')) {
               echo '<div class="tabs-panel" id="panel7">'
-              . get_field("panel7-content") .
+              . get_field("panel7_content") .
               '</div>';
             }
           ?>                                                             

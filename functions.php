@@ -10,7 +10,7 @@
  * https://github.com/olefredrik/FoundationPress. Good stuff!
  *
  * @link https://codex.wordpress.org/Theme_Development
- * @package FoundationPress
+ * @package WDYouth2017
  * @since FoundationPress 1.0.0
  */
 
