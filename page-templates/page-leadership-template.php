@@ -212,7 +212,7 @@ get_header(); ?>
               echo '<h2>'. get_field("project_directors_heading") .'</h2>';
             }
           ?>
-          <div class="row small-up-1 medium-up-3">
+          <div class="row small-up-1 medium-up-4">
           <?php
           /** Hyphen Team 1 **/
             if(get_field('hyphen1_image') && get_field('hyphen1_name')) {               
