@@ -2941,7 +2941,7 @@ if(function_exists("register_field_group"))
 			array (
 				'key' => 'field_58a08af34b825',
 				'label' => 'Section 9 Photo',
-				'name' => 'section9_photo',
+				'name' => 'section9_image',
 				'type' => 'image',
 				'save_format' => 'url',
 				'preview_size' => 'medium',
