@@ -1,0 +1,297 @@
+<?php
+/*
+Template Name: Leadership Template
+*/
+get_header(); ?>
+
+<?php
+
+      if(get_field('hero_image')) {
+        echo '<img src="'. get_field("hero_image") .'" class="event-hero" />';
+      }
+
+      if(get_field('cover_image')) {
+        echo '
+        <div class="text-center">
+          <div class="image-frame full-width">
+            <img src="'. get_field("cover_image") .'" />
+          </div>
+        </div>';
+      }
+
+?>
+<div id="leadership-page" role="main">
+
+<?php do_action( 'foundationpress_before_content' ); ?>
+<?php while ( have_posts() ) : the_post(); ?>
+  <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+      <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
+      <div class="entry-content text-center">
+          <?php the_content(); ?>
+          <?php
+          /** Youth Committee Heading **/
+            if(get_field('youth_committee_heading')) {               
+              echo '<h2>'. get_field("youth_committee_heading") .'</h2>';
+            }
+          ?>
+          <div class="row small-up-1 medium-up-3" data-equalizer data-equalize-on="medium">
+          <?php
+          /** Leaders **/
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader1_image')) {               
+                      echo '<img src="'. get_field("leader1_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader1_name')) {               
+                      echo '<h3>'. get_field("leader1_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader1_title')) {               
+                      echo '<h5>'. get_field("leader1_title") .'</h5>';
+                    }                    
+                    if(get_field('leader1_email')) {       
+                      echo '<a href="mailto:'. get_field("leader1_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';  
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader2_image')) {               
+                      echo '<img src="'. get_field("leader2_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader2_name')) {               
+                      echo '<h3>'. get_field("leader2_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader2_title')) {               
+                      echo '<h5>'. get_field("leader2_title") .'</h5>';
+                    }                    
+                    if(get_field('leader2_email')) {       
+                      echo '<a href="mailto:'. get_field("leader2_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>'; 
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader3_image')) {               
+                      echo '<img src="'. get_field("leader3_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader3_name')) {               
+                      echo '<h3>'. get_field("leader3_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader3_title')) {               
+                      echo '<h5>'. get_field("leader3_title") .'</h5>';
+                    }                    
+                    if(get_field('leader3_email')) {       
+                      echo '<a href="mailto:'. get_field("leader3_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';  
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader4_image')) {               
+                      echo '<img src="'. get_field("leader4_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader4_name')) {               
+                      echo '<h3>'. get_field("leader4_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader4_title')) {               
+                      echo '<h5>'. get_field("leader4_title") .'</h5>';
+                    }                    
+                    if(get_field('leader4_email')) {       
+                      echo '<a href="mailto:'. get_field("leader4_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';  
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader5_image')) {               
+                      echo '<img src="'. get_field("leader5_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader5_name')) {               
+                      echo '<h3>'. get_field("leader5_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader5_title')) {               
+                      echo '<h5>'. get_field("leader5_title") .'</h5>';
+                    }                    
+                    if(get_field('leader5_email')) {       
+                      echo '<a href="mailto:'. get_field("leader5_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader6_image')) {               
+                      echo '<img src="'. get_field("leader6_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader6_name')) {               
+                      echo '<h3>'. get_field("leader6_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader6_title')) {               
+                      echo '<h5>'. get_field("leader6_title") .'</h5>';
+                    }                    
+                    if(get_field('leader6_email')) {       
+                      echo '<a href="mailto:'. get_field("leader6_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader7_image')) {               
+                      echo '<img src="'. get_field("leader7_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader7_name')) {               
+                      echo '<h3>'. get_field("leader7_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader7_title')) {               
+                      echo '<h5>'. get_field("leader7_title") .'</h5>';
+                    }                    
+                    if(get_field('leader7_email')) {       
+                      echo '<a href="mailto:'. get_field("leader7_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader8_image')) {               
+                      echo '<img src="'. get_field("leader8_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader8_name')) {               
+                      echo '<h3>'. get_field("leader8_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader8_title')) {               
+                      echo '<h5>'. get_field("leader8_title") .'</h5>';
+                    }                    
+                    if(get_field('leader8_email')) {       
+                      echo '<a href="mailto:'. get_field("leader8_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>'; 
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader9_image')) {               
+                      echo '<img src="'. get_field("leader9_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader9_name')) {               
+                      echo '<h3>'. get_field("leader9_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader9_title')) {               
+                      echo '<h5>'. get_field("leader9_title") .'</h5>';
+                    }                    
+                    if(get_field('leader9_email')) {       
+                      echo '<a href="mailto:'. get_field("leader9_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader10_image')) {               
+                      echo '<img src="'. get_field("leader10_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader10_name')) {               
+                      echo '<h3>'. get_field("leader10_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader10_title')) {               
+                      echo '<h5>'. get_field("leader10_title") .'</h5>';
+                    }                    
+                    if(get_field('leader10_email')) {       
+                      echo '<a href="mailto:'. get_field("leader10_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';  
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader11_image')) {               
+                      echo '<img src="'. get_field("leader11_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader11_name')) {               
+                      echo '<h3>'. get_field("leader11_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader11_title')) {               
+                      echo '<h5>'. get_field("leader11_title") .'</h5>';
+                    }                    
+                    if(get_field('leader11_email')) {       
+                      echo '<a href="mailto:'. get_field("leader11_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+          echo '<div class="column">
+                  <div class="card" data-equalizer-watch>';
+                    if(get_field('leader12_image')) {               
+                      echo '<img src="'. get_field("leader12_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('leader12_name')) {               
+                      echo '<h3>'. get_field("leader12_name") .'</h3>';
+                    }
+                    echo'<div class="card-content">';
+                    if(get_field('leader12_title')) {               
+                      echo '<h5>'. get_field("leader12_title") .'</h5>';
+                    }                    
+                    if(get_field('leader12_email')) {       
+                      echo '<a href="mailto:'. get_field("leader12_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
+            ?>            
+          </div>
+      </div>
+      <div class="the-tags">
+          <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+          <p><?php the_tags(); ?></p>
+      </div>
+      <?php do_action( 'foundationpress_page_before_comments' ); ?>
+      <?php comments_template(); ?>
+      <?php do_action( 'foundationpress_page_after_comments' ); ?>
+  </article>
+<?php endwhile;?>
+
+<?php do_action( 'foundationpress_after_content' ); ?>
+
+</div>
+
+<?php get_footer();
