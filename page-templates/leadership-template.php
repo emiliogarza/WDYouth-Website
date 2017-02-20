@@ -46,7 +46,6 @@ get_header(); ?>
                     if(get_field('leader1_name')) {               
                       echo '<h3>'. get_field("leader1_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader1_title')) {               
                       echo '<h5>'. get_field("leader1_title") .'</h5>';
                     }                    
@@ -66,7 +65,6 @@ get_header(); ?>
                     if(get_field('leader2_name')) {               
                       echo '<h3>'. get_field("leader2_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader2_title')) {               
                       echo '<h5>'. get_field("leader2_title") .'</h5>';
                     }                    
@@ -86,7 +84,6 @@ get_header(); ?>
                     if(get_field('leader3_name')) {               
                       echo '<h3>'. get_field("leader3_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader3_title')) {               
                       echo '<h5>'. get_field("leader3_title") .'</h5>';
                     }                    
@@ -106,7 +103,6 @@ get_header(); ?>
                     if(get_field('leader4_name')) {               
                       echo '<h3>'. get_field("leader4_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader4_title')) {               
                       echo '<h5>'. get_field("leader4_title") .'</h5>';
                     }                    
@@ -126,7 +122,6 @@ get_header(); ?>
                     if(get_field('leader5_name')) {               
                       echo '<h3>'. get_field("leader5_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader5_title')) {               
                       echo '<h5>'. get_field("leader5_title") .'</h5>';
                     }                    
@@ -146,7 +141,6 @@ get_header(); ?>
                     if(get_field('leader6_name')) {               
                       echo '<h3>'. get_field("leader6_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader6_title')) {               
                       echo '<h5>'. get_field("leader6_title") .'</h5>';
                     }                    
@@ -166,7 +160,6 @@ get_header(); ?>
                     if(get_field('leader7_name')) {               
                       echo '<h3>'. get_field("leader7_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader7_title')) {               
                       echo '<h5>'. get_field("leader7_title") .'</h5>';
                     }                    
@@ -186,7 +179,6 @@ get_header(); ?>
                     if(get_field('leader8_name')) {               
                       echo '<h3>'. get_field("leader8_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader8_title')) {               
                       echo '<h5>'. get_field("leader8_title") .'</h5>';
                     }                    
@@ -206,7 +198,6 @@ get_header(); ?>
                     if(get_field('leader9_name')) {               
                       echo '<h3>'. get_field("leader9_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader9_title')) {               
                       echo '<h5>'. get_field("leader9_title") .'</h5>';
                     }                    
@@ -226,7 +217,6 @@ get_header(); ?>
                     if(get_field('leader10_name')) {               
                       echo '<h3>'. get_field("leader10_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader10_title')) {               
                       echo '<h5>'. get_field("leader10_title") .'</h5>';
                     }                    
@@ -246,7 +236,6 @@ get_header(); ?>
                     if(get_field('leader11_name')) {               
                       echo '<h3>'. get_field("leader11_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader11_title')) {               
                       echo '<h5>'. get_field("leader11_title") .'</h5>';
                     }                    
@@ -266,7 +255,6 @@ get_header(); ?>
                     if(get_field('leader12_name')) {               
                       echo '<h3>'. get_field("leader12_name") .'</h3>';
                     }
-                    echo'<div class="card-content">';
                     if(get_field('leader12_title')) {               
                       echo '<h5>'. get_field("leader12_title") .'</h5>';
                     }                    
