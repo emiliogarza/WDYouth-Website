@@ -37,173 +37,221 @@ get_header(); ?>
           <div class="row small-up-1 medium-up-3">
           <?php
           /** Youth President **/
-            if(get_field('president_image') && get_field('president_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("president_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("president_name") .'</h3>
-              <h5>Youth President</h5>
-              <a href="mailto:'. get_field("president_email") .'"><h5>'. get_field("president_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('president_image')) {               
+                      echo '<img src="'. get_field("president_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('president_name')) {               
+                      echo '<h3>'. get_field("president_name") .'</h3>';
+                    }
+                    echo '<h5>Youth President</h5>';
+                    if(get_field('president_email')) {       
+                      echo '<a href="mailto:'. get_field("president_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';            
           /** Youth Secretary **/
-            if(get_field('secretary_image') && get_field('secretary_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("secretary_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("secretary_name") .'</h3>
-              <h5>Youth Secretary</h5>
-              <a href="mailto:'. get_field("secretary_email") .'"><h5>'. get_field("secretary_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('secretary_image')) {               
+                      echo '<img src="'. get_field("secretary_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('secretary_name')) {               
+                      echo '<h3>'. get_field("secretary_name") .'</h3>';
+                    }
+                    echo '<h5>Youth Secretary</h5>';
+                    if(get_field('secretary_email')) {       
+                      echo '<a href="mailto:'. get_field("secretary_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Youth Promotions **/
-            if(get_field('promotions_image') && get_field('promotions_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("promotions_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("promotions_name") .'</h3>
-              <h5>Youth Promotions</h5>
-              <a href="mailto:'. get_field("promotions_email") .'"><h5>'. get_field("promotions_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('promotions_image')) {               
+                      echo '<img src="'. get_field("promotions_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('promotions_name')) {               
+                      echo '<h3>'. get_field("promotions_name") .'</h3>';
+                    }
+                    echo '<h5>Promotions Director</h5>';
+                    if(get_field('promotions_email')) {       
+                      echo '<a href="mailto:'. get_field("promotions_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 1 Director **/
-            if(get_field('section1_image') && get_field('section1_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section1_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section1_name") .'</h3>
-              <h5>Section 1 Director</h5>
-              <a href="mailto:'. get_field("section1_email") .'"><h5>'. get_field("section1_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            } 
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section1_image')) {               
+                      echo '<img src="'. get_field("section1_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section1_name')) {               
+                      echo '<h3>'. get_field("section1_name") .'</h3>';
+                    }
+                    echo '<h5>Section 1 Director</h5>';
+                    if(get_field('section1_email')) {       
+                      echo '<a href="mailto:'. get_field("section1_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 2 Director **/
-            if(get_field('section2_image') && get_field('section2_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section2_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section2_name") .'</h3>
-              <h5>Section 2 Director</h5>
-              <a href="mailto:'. get_field("section2_email") .'"><h5>'. get_field("section2_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }  
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section2_image')) {               
+                      echo '<img src="'. get_field("section2_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section2_name')) {               
+                      echo '<h3>'. get_field("section2_name") .'</h3>';
+                    }
+                    echo '<h5>Section 2 Director</h5>';
+                    if(get_field('section2_email')) {       
+                      echo '<a href="mailto:'. get_field("section2_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 3 Director **/
-            if(get_field('section3_image') && get_field('section3_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section3_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section3_name") .'</h3>
-              <h5>Section 3 Director</h5>
-              <a href="mailto:'. get_field("section3_email") .'"><h5>'. get_field("section3_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }  
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section3_image')) {               
+                      echo '<img src="'. get_field("section3_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section3_name')) {               
+                      echo '<h3>'. get_field("section3_name") .'</h3>';
+                    }
+                    echo '<h5>Section 3 Director</h5>';
+                    if(get_field('section3_email')) {       
+                      echo '<a href="mailto:'. get_field("section3_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 4 Director **/
-            if(get_field('section4_image') && get_field('section4_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section4_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section4_name") .'</h3>
-              <h5>Section 4 Director</h5>
-              <a href="mailto:'. get_field("section4_email") .'"><h5>'. get_field("section4_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section4_image')) {               
+                      echo '<img src="'. get_field("section4_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section4_name')) {               
+                      echo '<h3>'. get_field("section4_name") .'</h3>';
+                    }
+                    echo '<h5>Section 4 Director</h5>';
+                    if(get_field('section4_email')) {       
+                      echo '<a href="mailto:'. get_field("section4_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 5 Director **/
-            if(get_field('section5_image') && get_field('section5_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section5_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section5_name") .'</h3>
-              <h5>Section 5 Director</h5>
-              <a href="mailto:'. get_field("section5_email") .'"><h5>'. get_field("section5_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section5_image')) {               
+                      echo '<img src="'. get_field("section5_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section5_name')) {               
+                      echo '<h3>'. get_field("section5_name") .'</h3>';
+                    }
+                    echo '<h5>Section 5 Director</h5>';
+                    if(get_field('section5_email')) {       
+                      echo '<a href="mailto:'. get_field("section5_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 6 Director **/
-            if(get_field('section6_image') && get_field('section6_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section6_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section6_name") .'</h3>
-              <h5>Section 6 Director</h5>
-              <a href="mailto:'. get_field("section6_email") .'"><h5>'. get_field("section6_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            } 
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section6_image')) {               
+                      echo '<img src="'. get_field("section6_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section6_name')) {               
+                      echo '<h3>'. get_field("section6_name") .'</h3>';
+                    }
+                    echo '<h5>Section 6 Director</h5>';
+                    if(get_field('section6_email')) {       
+                      echo '<a href="mailto:'. get_field("section6_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';
           /** Section 7 Director **/
-            if(get_field('section7_image') && get_field('section7_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section7_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section7_name") .'</h3>
-              <h5>Section 7 Director</h5>
-              <a href="mailto:'. get_field("section7_email") .'"><h5>'. get_field("section7_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            } 
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section7_image')) {               
+                      echo '<img src="'. get_field("section7_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section7_name')) {               
+                      echo '<h3>'. get_field("section7_name") .'</h3>';
+                    }
+                    echo '<h5>Section 7 Director</h5>';
+                    if(get_field('section7_email')) {       
+                      echo '<a href="mailto:'. get_field("section7_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>'; 
           /** Section 8 Director **/
-            if(get_field('section8_image') && get_field('section8_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section8_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section8_name") .'</h3>
-              <h5>Section 8 Director</h5>
-              <a href="mailto:'. get_field("section8_email") .'"><h5>'. get_field("section8_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            } 
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section8_image')) {               
+                      echo '<img src="'. get_field("section8_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section8_name')) {               
+                      echo '<h3>'. get_field("section8_name") .'</h3>';
+                    }
+                    echo '<h5>Section 8 Director</h5>';
+                    if(get_field('section8_email')) {       
+                      echo '<a href="mailto:'. get_field("section8_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>'; 
           /** Section 9 Director **/
-            if(get_field('section9_image') && get_field('section9_name')) {               
-              echo '<div class="column">
-                    <div class="card">
-              <img src="'. get_field("section9_image") .'" />
-              <div class="card-content">
-              <h3>'. get_field("section9_name") .'</h3>
-              <h5>Section 9 Director</h5>
-              <a href="mailto:'. get_field("section9_email") .'"><h5>'. get_field("section9_email") .'</h5></a>              
-              </div>
-              </div>
-              </div>
-              ';
-            }                                                                                                                     
+          echo '<div class="column">
+                  <div class="card">';
+                    if(get_field('section9_image')) {               
+                      echo '<img src="'. get_field("section9_image") .'" />';
+                    }        
+                    echo'<div class="card-content">';
+                    if(get_field('section9_name')) {               
+                      echo '<h3>'. get_field("section9_name") .'</h3>';
+                    }
+                    echo '<h5>Section 9 Director</h5>';
+                    if(get_field('section9_email')) {       
+                      echo '<a href="mailto:'. get_field("section9_email") .'"><i class="fa fa-envelope" aria-hidden="true"></i></a>';
+                    }
+                    echo '
+                    </div>
+                  </div>
+                </div>';                                                                                                                     
           ?>          
           </div>
           <?php
