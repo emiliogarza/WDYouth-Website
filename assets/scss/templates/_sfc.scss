@@ -1,0 +1,28 @@
+#sfc { 
+	.row,
+	.sfc-hero {
+		margin-bottom: $global-margin;
+	}
+
+	.content {
+	    @include breakpoint(small only) {
+	    	border-bottom: 2px solid $light-gray;
+	    }
+
+		@include breakpoint(medium) {
+			padding: 5% 0;
+		}
+	}
+    @include breakpoint(small only) {
+		h2,
+		.image {	
+			text-align: center;
+		}
+	}
+}
+
+img.anime {
+    @include breakpoint(small only) {
+    	max-width: 100px;
+    }
+}

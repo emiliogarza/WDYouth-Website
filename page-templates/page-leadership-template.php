@@ -34,11 +34,11 @@ get_header(); ?>
               echo '<h2>'. get_field("youth_committee_heading") .'</h2>';
             }
           ?>
-          <div class="row small-up-1 medium-up-3">
+          <div class="row small-up-1 medium-up-3" data-equalizer data-equalize-on="medium">
           <?php
           /** Youth President **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('president_image')) {               
                       echo '<img src="'. get_field("president_image") .'" />';
                     }        
@@ -56,7 +56,7 @@ get_header(); ?>
                 </div>';            
           /** Youth Secretary **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('secretary_image')) {               
                       echo '<img src="'. get_field("secretary_image") .'" />';
                     }        
@@ -74,7 +74,7 @@ get_header(); ?>
                 </div>';
           /** Youth Promotions **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('promotions_image')) {               
                       echo '<img src="'. get_field("promotions_image") .'" />';
                     }        
@@ -92,7 +92,7 @@ get_header(); ?>
                 </div>';
           /** Section 1 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section1_image')) {               
                       echo '<img src="'. get_field("section1_image") .'" />';
                     }        
@@ -110,7 +110,7 @@ get_header(); ?>
                 </div>';
           /** Section 2 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section2_image')) {               
                       echo '<img src="'. get_field("section2_image") .'" />';
                     }        
@@ -128,7 +128,7 @@ get_header(); ?>
                 </div>';
           /** Section 3 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section3_image')) {               
                       echo '<img src="'. get_field("section3_image") .'" />';
                     }        
@@ -146,7 +146,7 @@ get_header(); ?>
                 </div>';
           /** Section 4 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section4_image')) {               
                       echo '<img src="'. get_field("section4_image") .'" />';
                     }        
@@ -164,7 +164,7 @@ get_header(); ?>
                 </div>';
           /** Section 5 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section5_image')) {               
                       echo '<img src="'. get_field("section5_image") .'" />';
                     }        
@@ -182,7 +182,7 @@ get_header(); ?>
                 </div>';
           /** Section 6 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section6_image')) {               
                       echo '<img src="'. get_field("section6_image") .'" />';
                     }        
@@ -200,7 +200,7 @@ get_header(); ?>
                 </div>';
           /** Section 7 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section7_image')) {               
                       echo '<img src="'. get_field("section7_image") .'" />';
                     }        
@@ -218,7 +218,7 @@ get_header(); ?>
                 </div>'; 
           /** Section 8 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section8_image')) {               
                       echo '<img src="'. get_field("section8_image") .'" />';
                     }        
@@ -236,7 +236,7 @@ get_header(); ?>
                 </div>'; 
           /** Section 9 Director **/
           echo '<div class="column">
-                  <div class="card">';
+                  <div class="card" data-equalizer-watch>';
                     if(get_field('section9_image')) {               
                       echo '<img src="'. get_field("section9_image") .'" />';
                     }        
