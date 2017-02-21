@@ -65,7 +65,47 @@ get_header(); ?>
 						<img class="orbit-image" src="' . get_field('rotating_image_7') . '" alt="Space">
 					</a>
 				</li>';
-			}															
+			}	
+			if(get_field('rotating_image_8') && get_field('rotating_image_8_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_8_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_8') . '" alt="Space">
+					</a>
+				</li>';
+			}
+			if(get_field('rotating_image_9') && get_field('rotating_image_9_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_9_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_9') . '" alt="Space">
+					</a>
+				</li>';
+			}
+			if(get_field('rotating_image_10') && get_field('rotating_image_10_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_10_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_10') . '" alt="Space">
+					</a>
+				</li>';
+			}
+			if(get_field('rotating_image_11') && get_field('rotating_image_11_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_11_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_11') . '" alt="Space">
+					</a>
+				</li>';
+			}
+			if(get_field('rotating_image_12') && get_field('rotating_image_12_link')) {
+				echo '				
+				<li class="orbit-slide">
+					<a href="'. get_field('rotating_image_12_link') .'">
+						<img class="orbit-image" src="' . get_field('rotating_image_12') . '" alt="Space">
+					</a>
+				</li>';
+			}
 		?>
 		</ul>
 	</div>
