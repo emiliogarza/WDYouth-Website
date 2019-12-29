@@ -435,7 +435,6 @@ get_header(); ?>
                                   </div>
                                 </div>
                               </div>';
-                        }
                       }
                       if(get_field('leader20_image') || get_field('leader20_name') || get_field('leader20_title')) {
                         echo '<div class="column">
