@@ -31,7 +31,7 @@ get_header(); ?>
               });
             }
           </script>
-          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmz_kPQkGh6ecMpcqI4tYzLatQhczHRnM&callback=initMap"></script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=xcallback=initMap"></script>
         </div>
       </div>
       <div class="the-tags">
